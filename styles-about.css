@@ -1,0 +1,42 @@
+.submenu2{
+    background-color: #C4151C;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 25px 0;
+}
+.submenu2 a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: #FFF;
+}
+.line{
+    border-bottom: 3px solid #FFF4E9;
+}
+.title-about{
+    color: #C50202;
+    font-size: 32px;
+  }
+.title-about p{
+    margin: 15px;
+  }
+.tab{
+    padding-left: 0px !important;
+    border-bottom: 1px solid #D30505;
+    margin-bottom: 25px;
+}
+.btn-tab{
+    background-color: #bfbdbd;
+    border: none;
+    padding: 7px 25px;
+    border-radius: 5px 5px 0 0 ;
+    font-weight: bold;
+    font-size: 20px;
+  }
+.btn-choose{
+    color: #FFF;
+    background-color: #0F6670;
+}
+.content img{
+    width: 75%;
+}

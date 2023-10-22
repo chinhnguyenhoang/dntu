@@ -1,0 +1,1042 @@
+/* Reset some default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .logo {
+    width: 70px;
+  }
+  /* Style the upper menu */
+  .upper-menu {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .library-info {
+    display: flex;
+    margin-left: 70px;
+  }
+  
+  .library-name {
+    color: #C50202;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .university-name{
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .opening-hours {
+    font-weight: bold;
+    margin-right: 90px;
+    font-size: 20px;
+    color: #C50202;
+  }
+
+  /* Style the lower menu */
+  .lower-menu {
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid red;
+    margin-left: 100px;
+  }
+  
+  
+  .lower-menu nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .lower-menu nav ul li {
+    margin: 0 10px;
+    margin-left: 50px;
+    position: relative;
+  }
+
+  .lower-menu nav ul li .submenu{
+    display: flex;
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    top:60px;
+    background-color: #FFF;
+    width: 310px;
+  }
+
+  .lower-menu nav ul li .submenu li{
+    margin: 0px !important;
+    padding: 10px 15px;
+    border: 1px solid #ededed;
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
+  .lower-menu nav ul li .submenu li:hover{
+    background-color: #FFE9B4;
+  }
+  .lower-menu nav ul li .submenu a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+  }
+  
+  .lower-menu nav ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    color: #1C76BC;
+  }
+  .lower-menu nav ul li a:hover{
+    color: #C50202;
+
+  }
+   .lower-menu nav ul li:hover .submenu{
+    display: block;
+   }
+
+  .lower-menu nav ul li i {
+    font-size: 30px;
+  }
+  
+  .submenu{
+    z-index: 100000;
+  }
+
+  /* Style the slideshow */
+  .slider{
+    width: 100%;
+    height: 550px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+.slider .list img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.slider .dots li.active{
+    width: 30px;
+}
+@media screen and (max-width: 768px){
+    .slider{
+        height: 400px;
+    }
+}
+
+
+  
+  /* Style the search bar */
+  .search-bar {
+    padding: 30px 0;
+    background-color: #FFF4E9;
+  }
+  .search-bar button{
+    border-color:#C50202 ;
+  }
+  
+  .search a{
+    color: #FFF;
+    text-decoration: none;
+  }
+  .search-bar .search:hover{
+    background-color: #fff;
+    border:1px solid #C50202;
+  }
+  .search-bar .search:hover a{
+    color: #C50202;
+  }
+  .adv-search a{
+    color: #C50202;
+    text-decoration: none;
+  }
+  .search-bar .adv-search:hover{
+    background-color: #C50202 !important;
+    border:none;
+  }
+  .search-bar .adv-search:hover a{
+    color: #fff;
+  }
+  .search-bar a {
+    font-size: 15px;
+  }
+  .search-bar select{
+    border-radius: 5px;
+    width: 200px;
+    font-weight: bold;
+    border-color: #C50202;
+  }
+  .search-bar .search{
+    background-color: #C50202;
+    border: none;
+    margin-right: 10px;
+  }
+  .search-bar .form-control{
+    border-color:#C50202 ;
+    width: 55%;
+    margin: 0 10px;
+    padding: 10px;
+  }
+
+  /* Style the statistics section */
+  .statistics {
+    background-color: #0F6670;
+    padding: 50px 0;
+  }
+  .statistics .col-8 img{
+    cursor: pointer;
+    transition: width 0.3s ease;
+  }
+  .statistics .col-8 img:hover{
+    transform: scale(1.05);
+  }
+
+  .statistics button{
+    border-radius: 5px;
+    border: none;
+    background-color: #FFE9B4;
+    color: #C50202;
+    font-size: 32px;
+  }
+  .statistics .col .Ebook{
+    font-weight: bold;
+    margin-left: 55px;
+    padding: 13px;
+    height: 100px;
+    background-color: #FFE9B4;
+    border-radius: 70px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    cursor: pointer;
+  }
+  .statistics .col .Ebook .icon {
+    background-color: #C50202;
+    transition-property: all;
+    transition-duration: 0.5s;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+  }
+  .statistics .col .Ebook .icon i{
+    transition-property: all;
+    transition-duration: 0.5s;
+    font-size: 45px;
+    color: #FFE9B4;
+  }
+  .statistics .col .Ebook .content{
+    margin-left: 60px;
+  }
+  .statistics .col .Ebook .content .number{
+    transition-property: all;
+    transition-duration: 0.5s;
+    color: #C50202;
+    font-size: 28px;
+  }
+  .statistics .col .Ebook .content .text{
+    font-size: 20px;
+  }
+  .statistics .col .Ebook .content .number p{
+    margin-bottom: 5px !important;
+  }
+
+  .statistics .col .document-paper{
+    margin-top: 40px;
+    margin-left: 55px;
+    padding: 13px;
+    height: 100px;
+    background-color: #FFE9B4;
+    border-radius: 70px;
+    transition-property: all;
+    cursor: pointer;
+    transition-duration: 0.5s;
+  }
+  .statistics .col .document-paper .icon {
+    background-color: #C50202;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
+  .statistics .col .document-paper .icon i{
+    font-size: 45px;
+    color: #FFE9B4;
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
+  .statistics .col .document-paper .content{
+    margin-left: 60px;
+  }
+  .statistics .col .document-paper .content .number{
+    color: #C50202;
+    font-size: 28px;
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
+  .statistics .col .document-paper .content .text{
+    font-size: 20px;
+  }
+  .statistics .col .document-paper .content .number p{
+    margin-bottom: 5px !important;
+  }
+
+  .statistics .col .Edocument{
+    margin : 40px 0 70px 55px;
+    padding: 13px;
+    height: 100px;
+    background-color: #FFE9B4;
+    border-radius: 70px;
+    transition-property: all;
+    cursor: pointer;
+    transition-duration: 0.5s;
+  }
+  .statistics .col .Edocument .icon {
+    background-color: #C50202;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
+  .statistics .col .Edocument .icon i{
+    font-size: 45px;
+    color: #FFE9B4;
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
+  .statistics .col .Edocument .content{
+    margin-left: 60px;
+  }
+  .statistics .col .Edocument .content .number{
+    color: #C50202;
+    font-size: 28px;
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
+  .statistics .col .Edocument .content .text{
+    font-size: 20px;
+  }
+  .statistics .col .Edocument .content .number p{
+    margin-bottom: 5px !important;
+  }
+
+  .statistics .col .Ebook:hover{
+    background-color: #C50202;
+    color: #fff;
+  }
+  .statistics .col .Ebook:hover .icon{
+    background-color: #FFE9B4;
+  }
+  .statistics .col .Ebook:hover .icon i{
+    color: #C50202;
+  }
+  .statistics .col .Ebook:hover .content .number{
+    color: #FFF;
+  }
+
+  .statistics .col .document-paper:hover{
+    background-color: #C50202;
+    color: #fff;
+  }
+  .statistics .col .document-paper:hover .icon{
+    background-color: #FFE9B4;
+  }
+  .statistics .col .document-paper:hover .icon i{
+    color: #C50202;
+  }
+  .statistics .col .document-paper:hover .content .number{
+    color: #FFF;
+  }
+
+  .statistics .col .Edocument:hover{
+    background-color: #C50202;
+    color: #fff;
+  }
+  .statistics .col .Edocument:hover .icon{
+    background-color: #FFE9B4;
+  }
+  .statistics .col .Edocument:hover .icon i{
+    color: #C50202;
+  }
+  .statistics .col .Edocument:hover .content .number{
+    color: #FFF;
+  }
+
+
+  /* Style the news and events section */
+  .news-events {
+    padding: 10px 0px;
+  }
+  .news-events .title{
+    color: #C50202;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .news-events .title p{
+    margin: 15px;
+  }
+  .news-events .row .col-7 a {
+    font-size: 40px;
+    text-decoration: none;
+    color: #000;
+  }
+  .news-events .row .col-5 a{
+    text-decoration: none;
+    color: #000;
+  }
+  .news-events .row .col-7 img{
+    transition: transform 0.3s ease;
+    width: 100%;
+  }
+  .news-events .row .hot-news{
+    cursor: pointer;
+  }
+  .news-events .row .col-5 {
+    cursor: pointer;
+  }
+  .news-events button a {
+    color: #C50202;
+    text-decoration: none;
+  }
+  .news-events .row .hot-news:hover a{
+    color: #C50202;
+  }
+  .news-events .row .hot-news:hover img{
+    transform: scale(1.05);
+  }
+  .news-events .row .col .news1:hover a{
+    color: #C50202;
+  }
+  .news-events .row .col .news:hover a{
+    color: #C50202;
+  }
+  .news-events .row .col .news1:hover img{
+    transform: scale(1.05);
+  }
+  .news-events .row .col .news:hover img{
+    transform: scale(1.05);
+  }
+  .news-events .row .col-5 p {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .news-events .row .col .news1{
+    margin-top: 45px;
+  }
+  .news-events button{
+    color: #C50202;
+    border-color: #C50202;
+    font-size: 40px;
+  }
+  .news-events .col img {
+    border-radius: 5px;
+  }
+
+  /* Style the new documents section */
+  .new-documents {
+    background-color:#0F6670;
+    padding: 50px 0px 50px 0px ;
+  }
+  .new-documents  .title{
+    color: #FFF4E9;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  .new-documents .title p{
+    margin: 15px;
+  }
+  .new-documents .col{
+    background-color: #fff;
+    margin: 0 20px;
+    height: 450px;
+    cursor: pointer;
+    padding: 0px !important;
+    border-radius: 25px ;
+  }
+  .new-documents .col a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .new-documents .col img{
+    transition: transform 0.3s ease;
+  }
+  .new-documents .sub-title{
+    font-size: 22px;
+    text-align: center;
+  }
+  .new-documents .col:hover a{
+    color: #C50202;
+  }
+  .new-documents .col:hover img{
+    transform: scale(1.05);
+  }
+
+  /* Style the footer */
+  .footer {
+    background-color: #8C1515;
+    padding: 30px;
+  }
+  .footer .col-8{
+    color: #fff;
+  }
+  .footer .col-8 p{
+    margin-left: 15px;
+  }
+  .footer .zalo{
+    background-color: #FFE9B4;
+    border-radius: 25px;
+    width: 120px;
+  }
+  .footer .facebook{
+    background-color: #FFE9B4;
+    border-radius: 25px;
+    width: 150px;
+    height: 39px;
+  }
+  .footer .youtube{
+    background-color: #FFE9B4;
+    border-radius: 25px;
+    width: 150px;
+    height: 39px;
+    margin-top: 15px;
+    margin-left: 50px;
+  }
+  .footer .mail{
+    margin-top: 17px;
+  }
+  .footer p {
+    margin-bottom: 0px !important;
+  }
+  /* Add more styles as needed for other elements */
+  .slider-wrapper {
+    position: relative;
+  }
+  
+  .slider-wrapper .slide-button {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    z-index: 5;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: #000;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .slider-wrapper .slide-button:hover {
+    background: #404040;
+  }
+  
+  .slider-wrapper .slide-button#prev-slide {
+    left: -25px;
+    display: none;
+  }
+  
+  .slider-wrapper .slide-button#next-slide {
+    right: -25px;
+  }
+  
+  .slider-wrapper .image-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 18px;
+    font-size: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  
+  .slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .slider-wrapper .image-list .image-item {
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .container .slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .slider-scrollbar .scrollbar-track {
+    background: #ccc;
+    width: 100%;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  .slider-scrollbar:hover .scrollbar-track {
+    height: 4px;
+  }
+  
+  .slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    background: #000;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    cursor: grab;
+    border-radius: inherit;
+  }
+  
+  .slider-scrollbar .scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+  }
+  
+  .slider-scrollbar .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+  }
+  .menu-mobile i {
+    display: none;
+  }
+  
+  /* Styles for mobile and tablets */
+  @media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+      display: none !important;
+    }
+  
+    .slider-wrapper .image-list {
+      gap: 10px;
+      margin-bottom: 15px;
+      scroll-snap-type: x mandatory;
+    }
+  
+    .slider-wrapper .image-list .image-item {
+      width: 280px;
+      height: 380px;
+    }
+  
+    .slider-scrollbar .scrollbar-thumb {
+      width: 20%;
+    }
+  }
+
+  @media screen and (max-width: 1200px){
+
+    .library-name{
+      font-size: 20px;
+    }
+    .university-name{
+      font-size: 15px;
+    }
+    .opening-hours{
+      font-size: 15px;
+    }
+    .language {
+      font-size: 13px;
+    }
+    .lower-menu nav ul li a{
+      font-size: 15px;
+    }
+    .statistics .col .Ebook{
+      margin-left: 0px;
+      padding: 10px;
+      height: 80px;
+    }
+    .statistics .col .Ebook .icon{
+      width: 60px;
+      height: 60px;
+    }
+    .statistics .col .Ebook .icon i{
+      font-size: 35px;
+    }
+    .statistics .col .Ebook .content{
+      margin-left: 30px;
+    }
+    .statistics .col .Ebook .content .number{
+      font-size: 24px;
+    }
+    .statistics .col .Ebook .content .text{
+      font-size: 17px;
+    }
+    .statistics .col .document-paper{
+      margin-left: 0px;
+      padding: 10px;
+      height: 80px;
+    }
+    .statistics .col .document-paper .icon{
+      width: 60px;
+      height: 60px;
+    }
+    .statistics .col .document-paper .icon i{
+      font-size: 35px;
+    }
+    .statistics .col .document-paper .content{
+      margin-left: 30px;
+    }
+    .statistics .col .document-paper .content .number{
+      font-size: 24px;
+    }
+    .statistics .col .document-paper .content .text{
+      font-size: 17px;
+    }
+    .statistics .col .Edocument{
+      margin-left: 0px;
+      padding: 10px;
+      height: 80px;
+    }
+    .statistics .col .Edocument .icon{
+      width: 60px;
+      height: 60px;
+    }
+    .statistics .col .Edocument .icon i{
+      font-size: 35px;
+    }
+    .statistics .col .Edocument .content{
+      margin-left: 30px;
+    }
+    .statistics .col .Edocument .content .number{
+      font-size: 24px;
+    }
+    .statistics .col .Edocument .content .text{
+      font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+
+  .library-name{
+    font-size: 16px;
+  }
+  .university-name{
+    font-size: 11px;
+  }
+  .opening-hours{
+    font-size: 11px;
+  }
+  .language {
+    font-size: 9px;
+  }
+  .logo{
+    width: 65px;
+  }
+  .lower-menu nav ul li {
+    margin-left: 35px;
+  }
+  .lower-menu nav ul li a{
+    font-size: 12px;
+  }
+  .lower-menu nav ul li i{
+    font-size: 24px;
+  }
+  .statistics .col .Ebook .content .number p{
+    margin-bottom: 0px !important;
+  }
+  .statistics .col .document-paper .content .number p{
+    margin-bottom: 0px !important;
+  }
+  .statistics .col .Edocument .content .number p{
+    margin-bottom: 0px !important;
+  }
+  .statistics .col .Ebook{
+    margin-left: 0px;
+    padding: 10px;
+    height: 60px;
+  }
+  .statistics .col .Ebook .icon{
+    width: 40px;
+    height: 40px;
+  }
+  .statistics .col .Ebook .icon i{
+    font-size: 25px;
+  }
+  .statistics .col .Ebook .content{
+    margin-left: 30px;
+  }
+  .statistics .col .Ebook .content .number{
+    font-size: 20px;
+  }
+  .statistics .col .Ebook .content .text{
+    font-size: 14px;
+  }
+
+  .statistics .col .document-paper{
+    margin-left: 0px;
+    padding: 10px;
+    height: 60px;
+  }
+  .statistics .col .document-paper .icon{
+    width: 40px;
+    height: 40px;
+  }
+  .statistics .col .document-paper .icon i{
+    font-size: 25px;
+  }
+  .statistics .col .document-paper .content{
+    margin-left: 30px;
+  }
+  .statistics .col .document-paper .content .number{
+    font-size: 20px;
+  }
+  .statistics .col .document-paper .content .text{
+    font-size: 14px;
+  }
+  .statistics .col .Edocument{
+    margin-left: 0px;
+    padding: 10px;
+    height: 60px;
+  }
+  .statistics .col .Edocument .icon{
+    width: 40px;
+    height: 40px;
+  }
+  .statistics .col .Edocument .icon i{
+    font-size: 25px;
+  }
+  .statistics .col .Edocument .content{
+    margin-left: 30px;
+  }
+  .statistics .col .Edocument .content .number{
+    font-size: 20px;
+  }
+  .statistics .col .Edocument .content .text{
+    font-size: 14px;
+  }
+  .hot-news p {
+    font-size: 25px;
+  }
+  .news-events .row .col-5 p {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .menu-mobile i {
+    display: block;
+    margin-top: 10px;
+  }
+  .menu-mobile{ 
+    display: block!important;
+    transition-property: all;
+    transition-duration: 1s;
+  }
+  .library-info{
+    margin-left: 30px;
+  }
+  .library-name{
+    font-size: 16px;
+  }
+  .university-name{
+    font-size: 12px;
+  }
+  .opening-hours{
+    display: none;
+  }
+  .language {
+    font-size: 11px;
+  }
+  .slider{
+    margin-top: 15px;
+  }
+  .logo{
+    width: 35px;
+    padding-bottom: 15px;
+  }
+  .lower-menu{
+    padding: 0px;
+    height: auto;
+    border: none;
+    margin: 0px;
+    display: none !important;
+    transition-property: all;
+    transition-duration: 1s;
+  }
+  .search-bar select{
+    width: 95px;
+  }
+  .see-3d button{
+    font-size: 20px;
+  }
+
+  .lower-menu nav ul li {
+    margin-left: 35px;
+  }
+  .lower-menu nav ul li a{
+    font-size: 9px;
+    font-weight: bold;
+  }
+  .lower-menu nav ul li i{
+    font-size: 20px;
+  }
+  .statistics .col .Ebook .content .number p{
+    margin-bottom: 0px !important;
+  }
+  .statistics .col .Ebook .content .text p{
+    margin-bottom: 0px !important;
+  }
+  .statistics .col .document-paper .content .text p{
+    margin-bottom: 0px !important;
+  }
+  .statistics .col .Edocument .content .text p{
+    margin-bottom: 0px !important;
+  }
+  .statistics .col .document-paper .content .number p{
+    margin-bottom: 0px !important;
+  }
+  .statistics .col .Edocument .content .number p{
+    margin-bottom: 0px !important;
+  }
+  .statistics .col .Ebook{
+    margin-left: 0px;
+    padding: 5px;
+    height: 40px;
+  }
+  .statistics .col .Ebook .icon{
+    width: 30px;
+    height: 30px;
+  }
+  .statistics .col .Ebook .icon i{
+    font-size: 15px;
+  }
+  .statistics .col .Ebook .content{
+    margin-left: 30px;
+  }
+  .statistics .col .Ebook .content .number{
+    font-size: 14px;
+  }
+  .statistics .col .Ebook .content .text{
+    font-size: 10px;
+  }
+
+  .statistics .col .document-paper{
+    margin-left: 0px;
+    padding: 5px;
+    height: 40px;
+  }
+  .statistics .col .document-paper .icon{
+    width: 30px;
+    height: 30px;
+  }
+  .statistics .col .document-paper .icon i{
+    font-size: 15px;
+  }
+  .statistics .col .document-paper .content{
+    margin-left: 30px;
+  }
+  .statistics .col .document-paper .content .number{
+    font-size: 14px;
+  }
+  .statistics .col .document-paper .content .text{
+    font-size: 10px;
+  }
+  .statistics .col .Edocument{
+    margin-left: 0px;
+    padding: 5px;
+    height: 40px;
+  }
+  .statistics .col .Edocument .icon{
+    width: 30px;
+    height: 30px;
+  }
+  .statistics .col .Edocument .icon i{
+    font-size: 15px;
+  }
+  .statistics .col .Edocument .content{
+    margin-left: 30px;
+  }
+  .statistics .col .Edocument .content .number{
+    font-size: 14px;
+  }
+  .statistics .col .Edocument .content .text{
+    font-size: 10px;
+  }
+  .hot-news p {
+    font-size: 25px;
+  }
+  .news-events .row .col-5 p {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  .menu-mobile:hover .lower-menu{
+    display: block!important;
+  }
+}
+

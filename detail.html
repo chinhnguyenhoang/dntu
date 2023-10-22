@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles-search.css" />
+    <title>Chi tiết</title>
+  </head>
+  <body>
+    <header class="container">
+      <img class="logo position-absolute" src="images/logo.png" alt="logo" />
+      <div class="upper-menu">
+        <div class="library-info flex-column">
+          <div class="library-name">TRUNG TÂM THÔNG TIN - THƯ VIỆN</div>
+          <div class="university-name">TRƯỜNG ĐẠI HỌC CÔNG NGHỆ ĐỒNG NAI</div>
+        </div>
+        <div class="d-flex">
+          <div class="opening-hours">Thứ 2 - Thứ 7 : Từ 8h - 16h30</div>
+          <div class="language fw-bold">
+            <span style="color: #c50202">VIE</span>||ENG
+          </div>
+        </div>
+      </div>
+      <div class="lower-menu d-flex justify-content-start">
+        <nav>
+          <ul>
+            <li class="text-uppercase">
+              <a href="index.html"
+                ><i
+                  class="fa-solid fa-house-chimney d-flex flex-column justify-content-center align-items-center"
+                ></i
+                >Trang chủ</a
+              >
+            </li>
+            <li class="">
+              <a href="" class="text-uppercase"
+                ><i class="fa-regular fa-file d-flex flex-column justify-content-center align-items-center"></i>Tài nguyên</a>
+                <ul class="submenu ">
+                  <li><a href="document.html">Tài liệu điện tử</a></li>
+                  <li><a href="document.html">Video bài giảng</a></li>
+                  <li><a href="document.html">Tài liệu môn học</a></li>
+                  <li><a href="document.html">Tài liệu in</a></li>
+                </ul>
+            </li>
+            <li class="">
+              <a href="#" class="text-uppercase"
+                ><i
+                  class="fa-solid fa-gear d-flex flex-column justify-content-center align-items-center"
+                ></i
+                >Dịch vụ</a
+              >
+              <ul class="submenu ">
+                <li><a href="#">Dịch vụ sinh viên</a></li>
+                <li><a href="#">Giảng viên</a></li>
+                <li><a href="#">nhân viên</a></li>
+                <li><a href="#">Tài liệu in</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a href="" class="text-uppercase"
+                ><i
+                  class="fa-solid fa-person-chalkboard d-flex flex-column justify-content-center align-items-center"
+                ></i
+                >Hướng dẫn</a
+              >
+              <ul class="submenu ">
+                <li><a href="about.html">Hướng dẫn sử dụng</a></li>
+                <li><a href="about.html">Hướng dẫn tài khoản sinh viên</a></li>
+                <li><a href="about.html">Sinh viên mượn sách</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a href="" class="text-uppercase"
+                ><i
+                  class="fa-solid fa-circle-info d-flex flex-column justify-content-center align-items-center"
+                ></i
+                >Giới thiệu</a
+              >
+              <ul class="submenu ">
+                <li><a href="about.html">Giới thiệu chung</a></li>
+                <li><a href="about.html">Nội quy</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div
+          class="col col-3 d-flex flex-column justify-content-start align-items-center"
+        >
+          <div
+            class="login d-flex flex-column justify-content-start align-items-center"
+          >
+            <p class="login-title">Đăng nhập tài khoản</p>
+            <input type="text" class="user" placeholder="Tên đăng nhập" />
+            <input type="password" class="password" placeholder="Mật khẩu" />
+            <button class="btn-login">Đăng nhập</button>
+          </div>
+          <div class="submenu">
+            <h5>Cơ sở dữ liệu</h5>
+            <p class="fw-bold">
+              <i class="fa-regular fa-file px-2"></i>khóa luận tốt nghiệp
+            </p>
+            <p class="fw-bold">
+              <i class="fa-regular fa-file px-2"></i>Nghiên cứu khoa học
+            </p>
+            <p class="fw-bold">
+              <i class="fa-regular fa-file px-2"></i>bài báo khoa học
+            </p>
+            <p class="fw-bold">
+              <i class="fa-regular fa-file px-2"></i>khoa kế toán
+            </p>
+            <p class="fw-bold choose">
+              <i class="fa-regular fa-file px-2"></i>Khoa công nghệ
+            </p>
+          </div>
+        </div>
+
+        <div class="col col-9">
+          <div
+            class="title-search d-flex justify-content-center align-items-center fw-bold"
+          >
+            <img src="images/line-left.png" />
+            <p>Thông tin chi tiết ấn phẩm</p>
+            <img src="images/Line-right.png" />
+          </div>
+          <div class="tab d-flex justify-content-start">
+            <button type="button" class="btn-tab btn-choose">
+              Hiển thị đơn giản
+            </button>
+            <button type="button" class="btn-tab">Hiển thị ISBG</button>
+            <button type="button" class="btn-tab">Hiển thị đầy đủ</button>
+            <button type="button" class="btn-tab">Hiển thị MARC</button>
+          </div>
+          <div class="content-detail">
+            <h5>Dữ liệu biên mục</h5>
+            <p>
+              Dạng tài liệu:Sách <br />Thông tin mô tả:Dale Carnegie ; Nguyễn
+              Hiến Lê dịch <br />Quẳng gánh lo đi và vui sống = How to stop
+              worrying and start livingTPHCM : Tổng hợp T.P. Hồ Chí Minh,
+              <br />2020311 tr ; 21 cm
+            </p>
+            <h5>Dữ liệu biên mục</h5>
+            <div class="d-flex justify-content-between mb-4">
+              <p>
+                DNTU: Kho Mượn (M): 100000126Tổng <br />số bản: 1 <br />Số bản
+                rỗi: 1 (kể cả các bản được giữ chỗ) <br />Số bản được giữ chỗ: 0
+              </p>
+              <div>
+                <div class="">
+                  <span>Số thẻ:</span>
+                  <input type="text" class="input-search" />
+                </div>
+                <div class="">
+                  <span>Mật khẩu:</span>
+                  <input type="text" class="input-search" />
+                </div>
+                <div class="">
+                  <span>Số ĐKCB:</span>
+                  <input type="text" class="input-search" />
+                </div>
+                <div class="">
+                  <span>Hiệu lực tới:</span>
+                  <input type="text" class="input-search" />
+                </div>
+              </div>
+            </div>
+            <h5>Mục từ truy cập</h5>
+            <p>
+              Tác giả: Dale Carnegie ; Nguyễn Hiến Lê dịch <br />DDC: 646.7
+              <br />Số liệu bổ sung tổng hợp ấn phẩm định kỳ Chi tiết
+            </p>
+            <h5>Bình phẩm bình luận</h5>
+            <div class="d-flex justify-content-center flex-column">
+              <div class="group-search">
+                <span>Số thẻ:</span>
+                <input
+                  type="text"
+                  class="input-search"
+                  placeholder="nhập họ tên vd: Nguyễn Văn A"
+                />
+              </div>
+              <div class="group-search">
+                <span>Mật khẩu:</span>
+                <input
+                  type="text"
+                  class="input-search"
+                  placeholder="nhập địa chỉ email vd: duy@dntu.edu.vn"
+                />
+              </div>
+              <div class="group-search">
+                <span>Số ĐKCB:</span>
+                <input
+                  type="text"
+                  class="input-search"
+                  placeholder="nhập nội dung bình phẩm bình luận"
+                />
+              </div>
+              <div class="group-search">
+                <span>Hiệu lực tới:</span>
+                <input type="text" class="input-search" />
+              </div>
+              
+            </div>
+            <div class="d-flex justify-content-center align-items-center mb-4">
+              <button class="btn-comment">Gửi bình luận</button>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">STT</th>
+                  <th scope="col">Ngày bình luận	</th>
+                  <th scope="col">Họ tên	</th>
+                  <th scope="col">Nội dung</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>1-2-2023</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col col-8 d-flex align-items-center">
+            <i class="fa-solid fa-house-chimney"></i>
+            <p>
+              Trung tâm Thông tin – Thư viện Trường Đại học Công nghệ Đồng Nai.
+            </p>
+          </div>
+          <div
+            class="col col-2 d-flex align-items-center justify-content-center zalo"
+          >
+            <p>Zalo</p>
+            <img style="padding: 8px 0 0 10px" src="images/zalo.png" />
+          </div>
+          <div class="col col-2">
+            <div
+              class="col col-2 d-flex align-items-center justify-content-center facebook"
+            >
+              <p>facebook</p>
+              <i
+                style="margin-left: 10px; color: #3b5998; width: 15px"
+                class="fa-brands fa-square-facebook"
+              ></i>
+            </div>
+          </div>
+          <div class="col col-8 d-flex align-items-center">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>
+              Đường Nguyễn Khuyến, KP5, Phường Trảng Dài, TP.Biên Hòa, Tỉnh Đồng
+              Nai.
+            </p>
+          </div>
+          <div class="col col-2">
+            <div
+              class="col col-2 d-flex align-items-center justify-content-center youtube"
+            >
+              <p>youtube</p>
+              <i
+                style="margin-left: 10px; color: #ff0000; width: 15px"
+                class="fa-brands fa-youtube"
+              ></i>
+            </div>
+          </div>
+          <div class="col col-8 d-flex align-items-center">
+            <i class="fa-solid fa-phone"></i>
+            <p>02512.607.770</p>
+          </div>
+          <div class="col col-8 d-flex align-items-center mail">
+            <i class="fa-regular fa-envelope"></i>
+            <p>02512.607.770</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
