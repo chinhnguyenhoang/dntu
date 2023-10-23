@@ -4,10 +4,69 @@ body, html {
     padding: 0;
     font-family: 'Roboto', sans-serif;
   }
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
 
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+
+div,
+p,
+span {
+    line-height: 26px;
+}
+
+p {
+    margin-bottom: 8px;
+    text-align: justify !important;
+}
+
+h1,
+h1,
+h3,
+h4,
+h5,
+h5 {
+    padding: 0px;
+    margin: 0px
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    outline: none;
+    border: none;
+    background: none;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 0.5s;
+    color: #1C76BC;
+}
+    a:hover {
+        color: #C50202;
+    }
+
+ul,
+ol,
+li {
+    padding: 0;
+    margin: 0;
+}
   .logo {
     width: 70px;
   }
+
   /* Style the upper menu */
   .upper-menu {
     height: 75px;
